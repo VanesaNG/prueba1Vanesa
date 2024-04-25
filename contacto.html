@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es"> <!--DEFINE EL IDIOMA: ES (ESPAÑOL)-->
+<head> <!--(head=cabeza)-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario - contacto</title> <!--NOMBRE QUE APARECE EN LA PESTAÑA (title=título)-->
+    <!-- <link rel="stylesheet" href="estilos/index.css"> Linkeamos los estilos css (link rel=relacion de enlace) -->
+</head>
+
+<body> <!--CUERPO DE MI PÁGINA WEB(body=cuerpo)-->
+    <h2>Formulario de contacto</h2>
+    <form action="procesar_formulario.py" method="post">
+
+        <label for="nombre">Nombre:</label> <!--(label for=etiqueta para)-->
+        <input type="text" id="nombre" placeholder="nombre aquí"> <!--(input type=tipo de entrada)-->
+        <br>
+        <br>
+        <label for="email">Ingrese su correo electrónico</label>
+        <input type="email" id="email" required placeholder="Ingrese aquí">
+        <br>
+        <br>
+        <label for="contraseña">Ingrese la contraseña</label>
+        <input type="password" id="contraseña" minlength="8">
+        <br>
+        <br>
+        <!--opciones desplegables-->
+        <label for="pais">País de residencia:</label>
+        <select name="" id="pais">
+        <option value="#">Selecciona tu país</option>
+        <option value="ar">Argentina</option>
+        <option value="py">Paraguay</option>
+        </select>
+        <br><br>
+        <label for="comentarios">comentarios</label>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+        <br><br>
+        <div>
+        Acepto términos y condiciones
+        <input type="checkbox">
+        </div>
+        <br><br>
+        <input type="submit" value="enviar">
+    </form>
+    <br><br>
+    <a href="index.html">
+        <button>Volver</button>
+    </a>
+
+
+</body>
+
+
+
+</html>
